@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./routes/layout/Layout";
 import ListPage from "./routes/listPage/ListPage";
 import SinglePage from "./routes/singlePage/SinglePage";
+import ProfilePage from "./routes/profilePage/ProfilePage";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,23 +24,13 @@ function App() {
           element: <SinglePage />,
         },
         {
-          // path: "/profile",
-          // element: <ProfilePage />,
+          path: "/profile",
+          element: <ProfilePage />,
         },
       ],
     },
   ]);
-  return (
-    <RouterProvider router={router} />
-
-    // <div className="layout">
-    //   <Navbar />
-    //   <div className="content">
-    //     <HomePage />
-    //     <Outlet />
-    //   </div>
-    // </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
