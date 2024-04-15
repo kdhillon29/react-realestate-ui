@@ -1,6 +1,7 @@
 import "./layout.scss";
 import NavBar from "../../components/navbar/NavBar";
 import { Outlet } from "react-router-dom";
+import Footer from "../../components/footer/Footer";
 
 function Layout() {
   return (
@@ -11,6 +12,7 @@ function Layout() {
       <div className="content">
         <Outlet />
       </div>
+      <Footer />
     </div>
   );
 }

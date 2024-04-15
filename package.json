@@ -10,12 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@cloudflare/next-on-pages": "^1.11.0",
+    "@cloudflare/workers-types": "^4.20240405.0",
+    "axios": "^1.6.8",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.22.3",
-    "sass": "^1.71.1"
+    "sass": "^1.71.1",
+    "wrangler": "^3.48.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
